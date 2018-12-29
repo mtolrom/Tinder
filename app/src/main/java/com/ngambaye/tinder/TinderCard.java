@@ -20,17 +20,17 @@ import com.mindorks.placeholderview.annotations.swipe.SwipeOutState;
 public class TinderCard {
 
     @View(R.id.profileImageView)
-    private ImageView profileImageView;
+    public ImageView profileImageView;
 
     @View(R.id.nameAgeTxt)
-    private TextView nameAgeTxt;
+    public TextView nameAgeTxt;
 
     @View(R.id.locationNameTxt)
-    private TextView locationNameTxt;
+    public TextView locationNameTxt;
 
-    private Article mArticle;
-    private Context mContext;
-    private SwipePlaceHolderView mSwipeView;
+    public Article mArticle;
+    public Context mContext;
+    public SwipePlaceHolderView mSwipeView;
 
     public TinderCard(Context context, Article article, SwipePlaceHolderView swipeView) {
         mContext = context;
@@ -39,35 +39,35 @@ public class TinderCard {
     }
 
     @Resolve
-    private void onResolved(){
+    public void onResolved(){
         Glide.with(mContext).load(mArticle.getPicUrl()).into(profileImageView);
         nameAgeTxt.setText(mArticle.getTitle() + ", " + mArticle.getLikesNumber());
         locationNameTxt.setText(mArticle. getCategory());
     }
 
     @SwipeOut
-    private void onSwipedOut(){
+    public void onSwipedOut(){
         Log.d("EVENT", "onSwipedOut");
         mSwipeView.addView(this);
     }
 
     @SwipeCancelState
-    private void onSwipeCancelState(){
+    public void onSwipeCancelState(){
         Log.d("EVENT", "onSwipeCancelState");
     }
 
     @SwipeIn
-    private void onSwipeIn(){
+    public void onSwipeIn(){
         Log.d("EVENT", "onSwipedIn");
     }
 
     @SwipeInState
-    private void onSwipeInState(){
+    public void onSwipeInState(){
         Log.d("EVENT", "onSwipeInState");
     }
 
     @SwipeOutState
-    private void onSwipeOutState(){
+    public void onSwipeOutState(){
         Log.d("EVENT", "onSwipeOutState");
     }
 }
