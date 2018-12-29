@@ -1,0 +1,32 @@
+[
+  {
+    "picUrl":"https://mekonecampusapistorage.blob.core.windows.net/campusimages/look.jpg",
+    "title":"Sofia",
+    "likesNumber":20,
+    "category":"New Wark"
+  },
+  {
+    "picUrl":"https://mekonecampusapistorage.blob.core.windows.net/campusimages/Mékoné Campus English.png",
+    "title":"Redmond",
+    "likesNumber":20,
+    "category":"Seattle"
+  },
+  {
+    "picUrl":"https://mekonecampusapistorage.blob.core.windows.net/campusimages/mekonecampus.jpg",
+    "title":"Eduquer Motiver Inspirer",
+    "likesNumber":20,
+    "category":"NDjamena"
+  },
+  {
+    "picUrl":"https://mekonecampusapistorage.blob.core.windows.net/campusimages/diasporaLogoBig.JPG",
+    "title":"Centre Polyvalent",
+    "likesNumber":20,
+    "category":"Abeche"
+  },
+  {
+    "picUrl":"https://mekonecampusapistorage.blob.core.windows.net/campusimages/api2.PNG",
+    "title":"MekoneCampus",
+    "likesNumber":21,
+    "category":"Bamako"
+  }
+]
